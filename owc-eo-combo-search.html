@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="owc-eo-combo-search">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `owc-eo-combo-search`
+     * Combo Element of owc list and eo search
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class OwcEoComboSearch extends Polymer.Element {
+      static get is() { return 'owc-eo-combo-search'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'owc-eo-combo-search'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(OwcEoComboSearch.is, OwcEoComboSearch);
+  </script>
+</dom-module>
